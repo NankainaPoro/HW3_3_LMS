@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Решение математических задач"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#8E5DD5"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/butUpdate"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="288dp"
+        android:text="Обновить примеры"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOne"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <TextView
+            android:id="@+id/equationOne"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:padding="10dp"
+            android:hint="00 + 00 = "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1"/>
+
+        <EditText
+            android:id="@+id/solvingOne"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#E7E4EC"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Решение"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTwo"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOne">
+
+        <TextView
+            android:id="@+id/equationTwo"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:padding="10dp"
+            android:hint="00 + 00 = "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1"/>
+
+        <EditText
+            android:id="@+id/solvingTwo"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#E7E4EC"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Решение"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThree"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTwo">
+
+        <TextView
+            android:id="@+id/equationThree"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:padding="10dp"
+            android:hint="00 + 00 = "
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1"/>
+
+        <EditText
+            android:id="@+id/solvingThree"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="#E7E4EC"
+            android:layout_marginStart="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Решение"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#8E5DD5"
+            android:textColorHint="#A688D1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
